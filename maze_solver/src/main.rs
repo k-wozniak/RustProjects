@@ -5,6 +5,7 @@ use image::GenericImageView;
 
 fn main() {
     // Parsing Arguments
+    /*
     let args = lapp::parse_args("
         Solves 
 
@@ -15,13 +16,11 @@ fn main() {
         <file> (string) input file name
         <file> (string) output file name
     ");
-
-	let n = args.get_integer("lines");
-	let verbose = args.get_bool("verbose");
-	let file = args.get_string("file");
-	// your magic goes here
-
-
+    
+	let _n = args.get_integer("lines");
+	let _verbose = args.get_bool("verbose");
+	let _file = args.get_string("file");
+	// your magic goes here*/
 
     // Use the open function to load an image from a Path.
     // `open` returns a `DynamicImage` on success.
@@ -30,7 +29,20 @@ fn main() {
     println!("dimensions {:?}", img.dimensions());
     // The color method returns the image's `ColorType`.
     println!("{:?}", img.color());
+    //println!("{:?}", img);
+}
+
+struct Maze {
+    start_position: (u32, u32),
+    end_position: (u32, u32),
 
 
-    
+}
+
+trait Algorithm {
+    fn 
+}
+
+struct A_Star_Algorithm {
+
 }
